@@ -1,15 +1,12 @@
 package org.babiy;
 
 public class Service {
-    public void info() {
-        System.out.println("Service");
+    public String info() {
+        return getClass().getSimpleName();
     }
     
     public static void main(String[] args) {
         Service service = new Service();
-        service.info();
+        System.out.println(service.info());
     }
-
-
-
 }
